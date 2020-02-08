@@ -1,6 +1,7 @@
 import React from 'react'
 import './media.css'
 import Navbar from '../src/components/navbar'
+import Footer from '../src/components/footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 class App extends React.Component {
@@ -18,7 +19,7 @@ class App extends React.Component {
     <Router>
     <div>
       <Navbar />
-      />
+      <Footer />
     </div>
     </Router>
   )
