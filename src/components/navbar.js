@@ -18,16 +18,16 @@ class Navbar extends React.Component {
         <div>
           <ul className="nav-div">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">HOME</Link>
             </li>
             <li>
-              <Link to="/menu">Menu</Link>
+              <Link to="/menu">MENU</Link>
             </li>
             <li>
-              <Link to="/openmic">Open Mic</Link>
+              <Link to="/openmic">OPEN MIC</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
   
