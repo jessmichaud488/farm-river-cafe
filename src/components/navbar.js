@@ -9,6 +9,7 @@ import Homepage from "../components/homepage"
 import Menu from "../components/menu"
 import Openmic from "../components/openmic"
 import Contact from "../components/contact"
+import Crafts from "../components/crafts"
 
 
 class Navbar extends React.Component {
@@ -22,6 +23,9 @@ class Navbar extends React.Component {
             </li>
             <li>
               <Link to="/menu">MENU</Link>
+            </li>
+            <li>
+              <Link to="/crafts">CRAFTS</Link>
             </li>
             <li>
               <Link to="/openmic">OPEN MIC</Link>
@@ -39,6 +43,9 @@ class Navbar extends React.Component {
             </Route>
             <Route path="/menu">
               <Menu />
+            </Route>
+            <Route path="/crafts">
+              <Crafts />
             </Route>
             <Route path="/openmic">
               <Openmic />

@@ -1,10 +1,46 @@
-import React from 'react';
+import React from 'react'
 
 class Contact extends React.Component {
-    redner () {
+    render () {
         return (
             <div>
-                <p>This is the Contact page.</p>
+                <div className="logo-div">
+                    <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
+                </div>
+                
+                <form>
+                    <img src={require("../images/526mainst.png")} alt="map showing address" id="map"></img>
+                <div className="row">
+                    <div className = "column">
+                        <input
+                            className="input-block"
+                            type="text"
+                            placeholder="Your name"
+                        />
+                        <input
+                            className="input-block"
+                            type="text"
+                            placeholder="Your email"
+                            required
+                        />
+                        <input
+                            className="input-block"
+                            type="text"
+                            placeholder="Subject"
+                        />
+                    </div>
+
+                    <div className = "column">
+                        <input 
+                            id="message-box"
+                            type="text"
+                            placeholder="Drop us a line!"
+                            required
+                        />
+                    </div>
+                </div>
+                </form>
+                <button id="form-button" type="submit">SEND</button>
             </div>
         )
     }

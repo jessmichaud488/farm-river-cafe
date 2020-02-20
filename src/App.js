@@ -9,18 +9,13 @@ class App extends React.Component {
     super(props)
     this.state = {
     }
-
-    //this.handleSignUpClick = this.handleSignUpClick.bind(this)
-
   }
-
+  
   render () {
   return (
     <Router>
-    <div>
       <Navbar />
       <Footer />
-    </div>
     </Router>
   )
   }

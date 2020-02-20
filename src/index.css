@@ -10,7 +10,7 @@ body {
   background-color:rgba(147, 146, 247, 0.5);
   color: black;
   margin-bottom: 150px;
-  margin-left: 550px;
+  margin-left: 630px;
   height: 325px;
   width: 275px;
   position: absolute;
@@ -24,13 +24,13 @@ body {
 
 #cafe-room-pic {
   margin-top: -10px;
-  margin-left: 865px;
+  margin-left: 945px;
   position: absolute;
   z-index: 2;
 }
 
 #chia-pudding-pic {
-  margin-left: 540px;
+  margin-left: 620px;
   margin-top: 230px;
   position: relative;
   z-index: -1;
@@ -39,20 +39,21 @@ body {
 #avocado-toast-pic {
   margin-top: 5px;
   position: absolute;
-  margin-left: 210px;
+  margin-left: 290px;
   z-index: -1;
 }
 
 #comfy-couch-pic {
   position: static;
   margin-top: 30px;
-  margin-left: -580px;
+  margin-left: -500px;
   z-index: 1;
 }
 
 .small-pic {
   height: 200px;
   width: 300px;
+  object-fit: cover;
   border-radius: 5px;
   box-shadow: 5px 10px 18px #575757;
 }
@@ -60,6 +61,7 @@ body {
 .medium-pic {
   height: 225px;
   width: 375px;
+  object-fit: cover;
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
@@ -67,22 +69,24 @@ body {
 .large-pic {
   height: 350px;
   width: 600px;
+  object-fit: cover;
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
 
 .logo-div {
-  margin-left: 500px;
+  margin-left: 520px;
+  margin-top: 20px;
 }
 
 #farmriver-logo {
-  height: 375px;
-  width: 475px;
+  height: 355px;
+  width: 455px;
 }
 
 .nav-div {
   list-style-type: none;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 .nav-div li {
@@ -100,13 +104,18 @@ li:not(:last-child) {
   border-right: solid 1px black;
 }
 
+#homepage-collage {
+  margin-bottom: 100px;
+}
+
 .footer-div {
   list-style-type: none;
-  margin-left: 200px;
+  margin-left: 250px;
 }
 
 .footer-div li {
   display: inline-block;
+  font-size: 14px;
   padding: 60px;
 }
 
@@ -117,12 +126,158 @@ li:not(:last-child) {
   font-size: 18px;
 }
 
-.footer-div h2 {
-  margin-top: 10px;
+#follow {
+  margin-bottom: 30px;
 }
-/*.address {
-  margin-top: 300px;
+
+#hours {
+  margin-bottom: 22px;
+}
+
+#facebook-logo {
+  display: block;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  margin-right: 5px;
+  height: 24px;
+  width: 24px;
+}
+
+#instagram-logo {
+  display: block;
+  margin-top: 15px;
+  margin-right: 5px;
+  height: 24px;
+  width: 24px;
+}
+
+#map {
+  margin-left: 460px;
+  margin-bottom: 50px;
+  width: 615px;
+  height: 300px;
+  background-color: grey;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.input-block {
+  margin-left: 460px;
+}
+
+form input {
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  width: 285px;
+  height: 20px;
+}
+
+#message-box {
+  height: 90px;
+  margin-right: -20px;
+}
+
+#form-button {
+  margin-top: 10px;
+  margin-left: 1020px;
+  display: inline-block;
+}
+
+#crafts-text-div {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 28px;
   text-align: center;
-  line-height: 10px;
-  font-size: 20px;
-}*/
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.one-pic {
+  height: 332px;
+  width: 332px;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #575757;
+}
+
+.two-pic {
+  height: 386px;
+  width: 293px;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.three-pic {
+  height: 248px;
+  width: 372px;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.four-pic {
+  height: 394px;
+  width: 295px;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #575757;
+}
+
+.five-pic {
+  height: 207px;
+  width: 309px;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.six-pic {
+  height: 306px;
+  width: 298px;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.seven-pic {
+  height: 215px;
+  width: 261px;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #575757;
+}
+
+.eight-pic {
+  height: 378px;
+  width: 381px;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.nine-pic {
+  height: 306px;
+  width: 372px;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #888888;
+}

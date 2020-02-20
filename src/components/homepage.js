@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 class Homepage extends React.Component {
     render () {
@@ -7,7 +7,8 @@ class Homepage extends React.Component {
         <div className="logo-div">
             <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
         </div>
-            
+        
+        <div id="homepage-collage">
             <img src={require("../images/cafe-room.jpg")} alt="Cafe room" className="small-pic" id="cafe-room-pic"></img>
                 <div className="text-div">
                     <p>We serve New Hartford and its neighbors the freshest breakfast and lunch with a passion for organic and local ingredients. We have a variety of coffees
@@ -17,6 +18,7 @@ class Homepage extends React.Component {
                 </div>
             <img src={require("../images/avocado-toast.jpg")} alt="Avocado toast" className="medium-pic" id="avocado-toast-pic"></img>
             <img src={require("../images/chia-pudding.jpg")} alt="Chia pudding" className="large-pic" id="chia-pudding-pic"></img>
+        </div>
         </div>
         )
     }
