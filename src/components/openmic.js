@@ -1,4 +1,5 @@
 import React from 'react';
+import Player from './player'
 
 class Openmic extends React.Component {
     redner () {
@@ -7,7 +8,7 @@ class Openmic extends React.Component {
                 <div className="logo-div">
                     <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
                 </div>
-        <p>This is the Open Mic page.</p>
+                <Player />
             </div>
         )
     }

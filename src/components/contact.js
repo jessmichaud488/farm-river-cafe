@@ -1,4 +1,5 @@
 import React from 'react'
+import MapContainer from './mapcontainer'
 
 class Contact extends React.Component {
     render () {
@@ -8,8 +9,8 @@ class Contact extends React.Component {
                     <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
                 </div>
                 
-                <form>
-                    <img src={require("../images/526mainst.png")} alt="map showing address" id="map"></img>
+                <MapContainer />
+                <form className="contact-form">
                 <div className="row">
                     <div className = "column">
                         <input
