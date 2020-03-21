@@ -1,45 +1,43 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
+import React from "react";
+import ReactDOM from "react-dom";
 
 class Player extends React.Component {
-    render () {
-      return (
-          <div>
-          <ReactPlayer
-            url='https://www.facebook.com/FarmRiverCafe/videos/539490733535134/'
-            width='100%'
-            height='100%'
-            config={{
-                facebook: {
-                  appId: '12345'
-                }
-              }}
-          />
-
-            <ReactPlayer
-            url='https://www.facebook.com/FarmRiverCafe/videos/436335760318415/'
-            width='100%'
-            height='100%'
-            config={{
-                facebook: {
-                  appId: '12345'
-                }
-              }}
-          />
-
-            <ReactPlayer
-            url='https://www.facebook.com/FarmRiverCafe/videos/758829094581577/'
-            width='100%'
-            height='100%'
-            config={{
-                facebook: {
-                  appId: '12345'
-                }
-              }}
-          />
-        </div>
-      )
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: 0,
+      src: this.props.videos[0]
+    };
   }
+
+  componentDidMount() {
+    let video = ReactDOM.findDOMNode(this);
+    video.addEventListener("ended", e => {
+      if (this.state.index < this.props.videos.length - 1) {
+        let nextIndex = this.state.index + 1;
+        this.setState({
+          index: nextIndex,
+          src: this.props.videos[nextIndex]
+        });
+      }
+    });
+  }
+  componentDidUpdate(prevProps, prevState) {
+    let video = ReactDOM.findDOMNode(this);
+    video.play();
+  }
+  render() {
+    return (
+      <video
+        src={this.state.src}
+        controls
+        playsinline
+        muted
+        crossorigin
+      />
+    );
+  }
+}
+
 
 export default Player

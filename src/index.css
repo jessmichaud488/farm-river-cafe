@@ -281,3 +281,10 @@ form input {
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
+
+.react-player {
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 620px;
+  margin-bottom: 350px;
+}

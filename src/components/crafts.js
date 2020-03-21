@@ -4,6 +4,9 @@ class Crafts extends React.Component {
     render () {
         return (
         <div>
+            <div className="logo-div">
+                    <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
+                </div>
         <div id="crafts-collage">
             <img src={require("../images/bracelets.jpg")} alt="Gemstones bracelets" className="one-pic" id="bracelets-pic"></img>
             <img src={require("../images/cloth.jpg")} alt="Cloth crafts" className="two-pic" id="cloth-crafts-pic"></img>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Menu extends React.Component {
-    redner () {
+    render () {
         return (
             <div>
                 <div className="logo-div">
