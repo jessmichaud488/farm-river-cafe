@@ -190,94 +190,156 @@ form input {
   box-shadow: 5px 10px 8px #575757;
 }
 
+#crafts-collage {
+  margin-left: calc((100% - 980px) / 2);
+  width: 980px;
+  position: static;
+  display: grid;
+  height: auto;
+  min-height: 500px;
+  grid-template-rows: min-content min-content min-content min-content min-content min-content 1fr;
+  grid-template-columns: 100%;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+
 #crafts-text-div {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 28px;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
 }
 
 .one-pic {
+  position: relative;
+  margin: 11px 0px -144px calc((100% - 980px) * 0.5);
+  left: 5px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
   height: 332px;
   width: 332px;
   object-fit: cover;
-  z-index: -1;
+  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #575757;
 }
 
 .two-pic {
+  position: relative;
+  margin: 0px 0px -94px calc((100% - 980px) * 0.5);
+  left: 595px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
   height: 386px;
   width: 293px;
   object-fit: cover;
-  z-index: 2;
+  /*z-index: 3;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
 
 .three-pic {
+  position: relative;
+  margin: 0px 0px -23px calc((100% - 980px) * 0.5);
+  left: 276px;
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: start;
+  align-self: start;
   height: 248px;
   width: 372px;
   object-fit: cover;
-  z-index: 1;
+  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
 
 .four-pic {
+  position: relative;
+  margin: 110px 0px -50px calc((100% - 980px) * 0.5);
+  left: 587px;
+  grid-area: 2 / 1 / 5 / 2;
+  justify-self: start;
+  align-self: start;
   height: 394px;
   width: 295px;
   object-fit: cover;
-  z-index: -1;
+  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #575757;
 }
 
 .five-pic {
+  position: relative;
+  margin: 0px 0px -77px calc((100% - 980px) * 0.5);
+  left: 45px;
+  grid-area: 3 / 1 / 4 / 2;
+  justify-self: start;
+  align-self: start;
   height: 207px;
   width: 309px;
   object-fit: cover;
-  z-index: -1;
+  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
 
 .six-pic {
+  position: relative;
+  margin: 0px 0px -143px calc((100% - 980px) * 0.5);
+  left: 348px;
+  grid-area: 5 / 1 / 6 / 2;
+  justify-self: start;
+  align-self: start;
   height: 306px;
   width: 298px;
   object-fit: cover;
-  z-index: 1;
+  /*z-index: 1;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
 
 .seven-pic {
+  position: relative;
+  margin: 10px 0px -20px calc((100% - 980px) * 0.5);
+  left: 45px;
+  grid-area: 6 / 1 / 7 / 2;
+  justify-self: start;
+  align-self: start;
   height: 215px;
   width: 261px;
   object-fit: cover;
-  z-index: -1;
+  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #575757;
 }
 
 .eight-pic {
+  position: relative;
+  margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+  left: 256px;
+  grid-area: 7 / 1 / 8 / 2;
+  justify-self: start;
+  align-self: start;
   height: 378px;
   width: 381px;
   object-fit: cover;
-  z-index: 1;
+  /*z-index: -1;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
 
 .nine-pic {
+  position: relative;
+  margin: 0px 0px -101px calc((100% - 980px) * 0.5);
+  left: 608px;
+  grid-area: 6 / 1 / 7 / 2;
+  justify-self: start;
+  align-self: start;
   height: 306px;
   width: 372px;
   object-fit: cover;
-  z-index: 2;
-  position: relative;
-  margin-top: 100px;
-  margin-left: 500px;
+  /*z-index: 1;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
