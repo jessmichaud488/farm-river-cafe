@@ -14,9 +14,9 @@ class Crafts extends React.Component {
             <img src={require("../images/gemstonesandoils.jpg")} alt="Gemstones and oils" className="four-pic" id="gemstones-and-oils-pic"></img>
             <img src={require("../images/headbands.jpg")} alt="Cloth headbands" className="five-pic" id="cloth-headbands-pic"></img>
             <img src={require("../images/knits.jpg")} alt="Knit crafts" className="six-pic" id="knit-crafts-pic"></img>
-            <img src={require("../images/mugs.jpg")} alt="Mugs" className="seven-pic" id="mugs-pic"></img>
+            <img src={require("../images/mugs.jpg")} alt="Mugs" className="nine-pic" id="mugs-pic"></img>
             <img src={require("../images/pottery.jpg")} alt="Pottery" className="eight-pic" id="pottery-pic"></img>
-            <img src={require("../images/lavenderpack.jpg")} alt="Lavender herbal pack" className="nine-pic" id="herbal-pack-pic"></img>
+            <img src={require("../images/lavenderpack.jpg")} alt="Lavender herbal pack" className="seven-pic" id="herbal-pack-pic"></img>
         </div>
 
         <div id="crafts-text-div">

@@ -1,35 +1,39 @@
 import React from 'react';
-import Player from '../components/player'
 
-class Openmic extends React.Component {
-    render () {
-        const styles = {
-            fontFamily: 'sans-serif',
-            textAlign: 'center'
-          };
+const path1 = require('../videos/OpenMic1.mp4');
+const path2 = require('../videos/OpenMic2.mp4');
+const path3 = require('../videos/OpenMic3.mp4');
 
-        var openMicVids = [
-            /*'../videos/OpenMic1.mp4',
-            '../videos/OpenMic2.mp4',
-            '../videos/OpenMic3.mp4'*/
-            "//www.facebook.com/FarmRiverCafe/videos/539490733535134", 
-            "//www.facebook.com/FarmRiverCafe/videos/758829094581577",
-            "//www.facebook.com/FarmRiverCafe/videos/436335760318415"
-          ];
-
+    class OpenMic extends React.Component {
+    render() {
         return (
             <div>
-                <div className="logo-div">
-                    <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
-                </div>
+            <div className="logo-div">
+                <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
+            </div>
 
-            <div style={styles}>
-            <Player videos={openMicVids}/>
+            <div id="video-div">
+                <video controls>
+                    <source src={path1} type="video/mp4"></source>
+                </video>
+
+                <video controls>
+                    <source src={path2} type="video/mp4"></source>
+                </video>
+
+                <video controls>
+                    <source src={path3} type="video/mp4"></source>
+                </video>
+            </div>
+
+            <div id="openmic-text-div">
+            <p>We love our local musicians! Every Friday night between 6:30PM-9:30PM, everyone is welcome to stop by</p>
+            <p>for entertainment or to entertain!</p>
             </div>
 
             </div>
-        )
+                )
+            }
     }
-}
 
-export default Openmic
+    export default OpenMic

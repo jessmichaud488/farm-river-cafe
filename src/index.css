@@ -101,8 +101,8 @@ li:not(:last-child) {
 
 .footer-div {
   list-style-type: none;
-  margin-top: 300px;
-  margin-left: 250px;
+  margin-top: 250px;
+  margin-left: 253px;
 }
 
 .footer-div li {
@@ -196,6 +196,7 @@ form input {
 
 #crafts-collage {
   margin-left: calc((100% - 980px) / 2);
+  margin-bottom: 50px;
   width: 980px;
   position: static;
   display: grid;
@@ -208,6 +209,7 @@ form input {
 }
 
 #crafts-text-div {
+  margin-top: 100px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 28px;
   text-align: center;
@@ -223,7 +225,6 @@ form input {
   height: 332px;
   width: 332px;
   object-fit: cover;
-  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #575757;
 }
@@ -238,7 +239,6 @@ form input {
   height: 386px;
   width: 293px;
   object-fit: cover;
-  /*z-index: 3;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
@@ -253,7 +253,6 @@ form input {
   height: 248px;
   width: 372px;
   object-fit: cover;
-  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
@@ -268,7 +267,6 @@ form input {
   height: 394px;
   width: 295px;
   object-fit: cover;
-  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #575757;
 }
@@ -283,7 +281,6 @@ form input {
   height: 207px;
   width: 309px;
   object-fit: cover;
-  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
@@ -298,7 +295,6 @@ form input {
   height: 306px;
   width: 298px;
   object-fit: cover;
-  /*z-index: 1;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
@@ -313,7 +309,6 @@ form input {
   height: 215px;
   width: 261px;
   object-fit: cover;
-  /*z-index: -2;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #575757;
 }
@@ -328,7 +323,6 @@ form input {
   height: 378px;
   width: 381px;
   object-fit: cover;
-  /*z-index: -1;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
@@ -343,14 +337,36 @@ form input {
   height: 306px;
   width: 372px;
   object-fit: cover;
-  /*z-index: 1;*/
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
 }
 
-.react-player {
+video {
   display: inline-block;
   margin-top: 100px;
-  margin-left: 620px;
-  margin-bottom: 350px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 450px;
+}
+
+#video-div {
+  width: 100%;
+  text-align: center;
+}
+
+#openmic-text-div {
+  margin-top: 100px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+#menu-text {
+  text-align: center;
+}
+
+#menu-photo {
+  margin-left: 475px;
+  width: 600px;
+  height: 1000px;
 }

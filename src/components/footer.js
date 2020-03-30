@@ -20,10 +20,12 @@ class Footer extends React.Component {
             </li>
             <li>
               <h2 id="hours">HOURS</h2>
-                  <p>MONDAY, WEDNESDAY, THURSDAY: 7:00AM - 3:00PM</p>
-                  <p>TUESDAY: CLOSED</p>
-                  <p>FRIDAY: 7:00AM - 9:00PM</p>
-                  <p>SATURDAY, SUNDAY: 8:00AM - 3:00PM</p>
+                  <p>Monday-Thursday: 7:30AM-3:30PM</p>
+                  <p>Friday: 7:30AM-3:30PM
+                    <br></br>
+                    (Open Mic 6:30PM-9:30PM)</p>
+                  <p>Saturday: 8:30AM-5:00PM</p>
+                  <p>Sunday: CLOSED</p>
             </li>
           </ul>
         </div>
