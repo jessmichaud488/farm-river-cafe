@@ -101,8 +101,8 @@ li:not(:last-child) {
 
 .footer-div {
   list-style-type: none;
-  margin-top: 250px;
-  margin-left: 253px;
+  margin-top: 275px;
+  margin-left: 300px;
 }
 
 .footer-div li {
@@ -119,6 +119,7 @@ li:not(:last-child) {
   font-weight: bold;
   text-decoration: none;
   font-size: 18px;
+  height: 250px;
 }
 
 #follow {
@@ -369,4 +370,32 @@ video {
   margin-left: 475px;
   width: 600px;
   height: 1000px;
+}
+
+.dessert-pic {
+  object-fit: cover;
+  margin-right: 20px;
+  height: 300px;
+  width: 400px;
+}
+
+#stephanie-pic {
+  margin: 25px;
+  object-fit: cover;
+  text-align: center;
+  height: 400px;
+  width: 300px;
+}
+
+#desserts-div{
+  text-align: center;
+}
+
+#desserts-images-div {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: 500;
 }
