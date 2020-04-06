@@ -1,63 +1,48 @@
-import React from 'react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom"
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Transition, TransitionGroup } from 'react-transition-group';
+import { play, exit } from '../timelines'
+import Nav from '../nav'
 import Homepage from "../components/homepage"
 import Menu from "../components/menu"
 import Openmic from "../components/openmic"
 import Contact from "../components/contact"
 import Crafts from "../components/crafts"
 
+class App extends Component {
 
-class Navbar extends React.Component {
-  render () {
+  render() {
     return (
-      <Router>
-        <div>
-          <ul className="nav-div">
-            <li>
-              <Link to="/">HOME</Link>
-            </li>
-            <li>
-              <Link to="/menu">MENU</Link>
-            </li>
-            <li>
-              <Link to="/crafts">CRAFTS</Link>
-            </li>
-            <li>
-              <Link to="/openmic">OPEN MIC</Link>
-            </li>
-            <li>
-              <Link to="/contact">CONTACT</Link>
-            </li>
-          </ul>
-  
-          <hr />
+      <BrowserRouter>
+        <div className="app">
+          <Nav/>
+          <Route render={({ location }) => {
+            const { pathname, key } = location;
 
-          <Switch>
-            <Route exact path="/">
-              <Homepage />
-            </Route>
-            <Route path="/menu">
-              <Menu />
-            </Route>
-            <Route path="/crafts">
-              <Crafts />
-            </Route>
-            <Route path="/openmic">
-              <Openmic />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-          </Switch>
+            return (
+              <TransitionGroup component={null}>
+                <Transition
+                  key={key}
+                  appear={true}
+                  onEnter={(node, appears) => play(pathname, node, appears)}
+                  onExit={(node, appears) => exit(node, appears)}
+                  timeout={{enter: 750, exit: 150}}
+                >
+                  <Switch location={location}>
+                    <Route exact path="/" component={Homepage}/>
+                    <Route path="/menu" component={Menu} />
+                    <Route path="/crafts" component={Crafts} />
+                    <Route path="/openmic" component={Openmic} />
+                    <Route path="/contact" component={Contact} />
+                  </Switch>
+                </Transition>
+              </TransitionGroup>
+            )
+          }}/>
         </div>
-      </Router>
-      );
-    }
+      </BrowserRouter>
+    )
   }
-
-  export default Navbar
+}
+  
+  export default App;
