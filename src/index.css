@@ -1,6 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background-image: url("images/shiplapbackground.png");
+  background-image: url("images/lightshiplap.jpg");
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -85,7 +85,7 @@ nav a {
   font-weight: 500;
   text-decoration: none;
   font-size: 32px;
-  background-color: rgb(257, 257, 257, 0.5);
+  background-color: rgb(257, 257, 257, 0.3);
   display: inline-block;
 }
 
@@ -94,6 +94,7 @@ nav a:not(:last-child) {
 }
 
 #homepage-collage {
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -349,6 +350,9 @@ video {
   margin-left: 50px;
   margin-right: 50px;
   height: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #575757;
 }
 
 #video-div {
@@ -371,6 +375,9 @@ video {
   margin-left: 475px;
   width: 600px;
   height: 1000px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #575757;
 }
 
 .dessert-pic {
@@ -378,14 +385,19 @@ video {
   margin-right: 20px;
   height: 300px;
   width: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #575757;
 }
 
 #stephanie-pic {
   margin: 25px;
-  object-fit: cover;
   text-align: center;
   height: 400px;
   width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #575757;
 }
 
 #desserts-div{

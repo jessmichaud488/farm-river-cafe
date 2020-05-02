@@ -5,7 +5,7 @@ const routes = [
   { to: '/', label: 'HOME' },
   { to: '/menu', label: 'MENU' },
   { to: '/crafts', label: 'CRAFTS' },
-  { to: '/openmic', label: 'OPENMIC' },
+  { to: '/openmic', label: 'OPEN MIC' },
   { to: '/contact', label: 'CONTACT' }
 ];
 
