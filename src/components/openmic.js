@@ -7,7 +7,7 @@ const path3 = require('../videos/OpenMic3.mp4');
     class OpenMic extends React.Component {
     render() {
         return (
-            <div>
+            <div className="main-div">
             <div className="logo-div">
                 <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
             </div>

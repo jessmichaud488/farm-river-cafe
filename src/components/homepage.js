@@ -3,7 +3,7 @@ import React from 'react'
 class Homepage extends React.Component {
     render () {
         return (
-    <div>
+    <div className="main-div">
         <div className="logo-div">
             <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
         </div>

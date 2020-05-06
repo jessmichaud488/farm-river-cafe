@@ -63,14 +63,17 @@ body {
 }
 
 
-.logo-div {
-  margin-left: 520px;
-  margin-top: 50px;
+.main-div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #farmriver-logo {
+  margin-top: 60px;
   height: 355px;
   width: 455px;
+  margin-left: 525px;
 }
 
 nav {
@@ -85,7 +88,7 @@ nav a {
   font-weight: 500;
   text-decoration: none;
   font-size: 32px;
-  background-color: rgb(257, 257, 257, 0.3);
+  background-color: rgb(257, 257, 257, 0.5);
   display: inline-block;
 }
 
@@ -350,9 +353,8 @@ video {
   margin-left: 50px;
   margin-right: 50px;
   height: 450px;
-  object-fit: cover;
   border-radius: 5px;
-  box-shadow: 5px 10px 18px #575757;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 #video-div {
@@ -375,16 +377,6 @@ video {
   margin-left: 475px;
   width: 600px;
   height: 1000px;
-  object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 5px 10px 18px #575757;
-}
-
-.dessert-pic {
-  object-fit: cover;
-  margin-right: 20px;
-  height: 300px;
-  width: 400px;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 5px 10px 18px #575757;

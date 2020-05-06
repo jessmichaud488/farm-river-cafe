@@ -1,9 +1,11 @@
 import React from 'react';
+import Carousel from './carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class Menu extends React.Component {
     render () {
         return (
-            <div>
+            <div className="main-div">
                 <div className="logo-div">
                     <img src={require("../images/farmriverlogo-transparent.png")} alt="Farm River Cafe logo" id="farmriver-logo"></img>
                 </div>
@@ -20,11 +22,7 @@ class Menu extends React.Component {
                     <p className="font-bold">**If you have a dietary allergy/preference, please be sure to ask first!**</p>
                 </div>
 
-                <div id="desserts-images-div">
-                    <img src={require('../images/barwithmug.jpg')} alt="Dessert bar with mug" className="dessert-pic"></img>
-                    <img src={require('../images/cupcakes.jpg')} alt="Cupcakes" className="dessert-pic"></img>
-                    <img src={require('../images/crumble.jpg')} alt="Different crumbles on display" className="dessert-pic"></img>
-                </div>
+                <Carousel />
             </div>
         )
     }
