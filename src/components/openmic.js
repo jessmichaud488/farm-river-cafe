@@ -26,7 +26,7 @@ const path3 = require('../videos/OpenMic3.mp4');
                 </video>
             </div>
 
-            <div id="openmic-text-div">
+            <div id="openmic-text-div" className="font-bold">
             <p>We love our local musicians! Every Friday night between 6:30PM-9:30PM, everyone is welcome to stop by</p>
             <p>for entertainment or to entertain!</p>
             </div>

@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 let styles = {
-    margin: 'auto',
+    margin: '100px auto auto auto',
     width: '500px',
     objectfit: 'cover'
   };

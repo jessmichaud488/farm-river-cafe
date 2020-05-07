@@ -19,7 +19,7 @@ class Crafts extends React.Component {
             <img src={require("../images/lavenderpack.jpg")} alt="Lavender herbal pack" className="seven-pic" id="herbal-pack-pic"></img>
         </div>
 
-        <div id="crafts-text-div">
+        <div id="crafts-text-div" className="font-bold">
             <p>Not only do we love to support the local music scene in the Litchfield Hills but we support our artisans too!</p>
             <p>Come and browse our selection of pottery, jewelry, and crafts while waiting for lunch in our sitting room.</p>
         </div>
