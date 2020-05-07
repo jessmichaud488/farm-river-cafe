@@ -5,12 +5,13 @@ class Footer extends React.Component {
         return (
         <div>
           <ul className="footer-div">
-            <li>
-              <h2 id="follow">FOLLOW US</h2>
+            <li id="follow">
+              <h2>FOLLOW US</h2>
               <img src={require("../images/facebook.png")} href="https://www.facebook.com/FarmRiverCafe/" id="facebook-logo" target="_blank" rel="noopener noreferrer" alt="facebook logo"></img>FACEBOOK
+              <br></br>
               <img src={require("../images/instagram.png")} href="https://www.instagram.com/farmrivercafect/" id="instagram-logo" target="_blank" rel="noopener noreferrer" alt="instagram logo"></img>@farmrivercafect
             </li>
-            <li>
+            <li id="address">
               <h2>ADDRESS</h2>
               <p>526 Main St</p>
               <p>New Hartford, CT 06057</p>
@@ -18,8 +19,8 @@ class Footer extends React.Component {
               <br></br>
               <br></br>
             </li>
-            <li>
-              <h2 id="hours">HOURS</h2>
+            <li id="hours">
+              <h2>HOURS</h2>
                   <p>Monday-Thursday: 7:30AM-3:30PM</p>
                   <p>Friday: 7:30AM-3:30PM
                     <br></br>

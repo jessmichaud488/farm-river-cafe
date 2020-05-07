@@ -1,8 +1,14 @@
 body {
+  overflow-x: auto;
+  overflow-y: scroll;
   font-family: 'Raleway', sans-serif;
-  background-image: url("images/lightshiplap.jpg");
-  background-size: auto;
+  background-image: url("images/whiteshiplap.jpg");
+  background-size: 2000px 4000px;
   background-repeat: no-repeat;
+}
+
+body, html {
+  height: 100%;
 }
 
 .text-div {
@@ -88,7 +94,6 @@ nav a {
   font-weight: 500;
   text-decoration: none;
   font-size: 32px;
-  background-color: rgb(257, 257, 257, 0.5);
   display: inline-block;
 }
 
@@ -102,7 +107,9 @@ nav a:not(:last-child) {
 }
 
 .footer-div {
-  background-color: rgb(257, 257, 257, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1px;
   list-style-type: none;
   margin-top: 250px;
   margin-left: 250px;
@@ -127,16 +134,20 @@ nav a:not(:last-child) {
   font-size: 18px;
 }
 
-#follow {
-  margin-bottom: 30px;
-}
-
-#hours {
+#follow h2{
   margin-bottom: 22px;
 }
 
+#address h2{
+  margin-bottom: 50px;
+}
+
+#hours h2{
+  margin-bottom: 50px;
+}
+
 #facebook-logo {
-  display: block;
+  display: inline-block;
   padding-bottom: 5px;
   margin-top: 15px;
   margin-right: 5px;
@@ -145,7 +156,7 @@ nav a:not(:last-child) {
 }
 
 #instagram-logo {
-  display: block;
+  display: inline-block;
   margin-top: 15px;
   margin-right: 5px;
   height: 24px;
