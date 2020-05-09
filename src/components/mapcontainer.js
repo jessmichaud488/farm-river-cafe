@@ -1,5 +1,6 @@
 import React from 'react'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import mapsKey from '../config'
 
 const mapStyles = {
     width: '605px',
@@ -14,9 +15,9 @@ render() {
           google={this.props.google}
           zoom={8}
           style={mapStyles}
-          initialCenter={{ lat: 41.878977, lng: -72.979586}}
+          initialCenter={{ lat: 41.878977, lng: -72.979586 }}
         >
-          <Marker position={{ lat: 42.00, lng: -73.00}} />
+          <Marker position={{ lat: 41.878977, lng: -72.979586 }} />
         </Map>
         </div>
     );
@@ -24,5 +25,5 @@ render() {
 }
 
   export default GoogleApiWrapper({
-    apiKey: 'TOKEN'
+    apiKey: mapsKey
   })(MapContainer);

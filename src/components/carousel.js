@@ -11,7 +11,10 @@ let styles = {
 function App() {
   return (
 	<div style={styles}>
-		<Carousel autoPlay showThumbs={false}>
+		<Carousel 
+			autoPlay
+			showThumbs={false}
+		>
 			<div>
 				<img src={require('../images/barwithmug.jpg')} alt="Dessert bar with mug" />
 			</div>

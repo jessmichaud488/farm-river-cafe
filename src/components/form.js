@@ -24,14 +24,14 @@ class Form extends React.Component {
             <label className="input-block" >Your Name:</label>
             <input 
             type="text" 
-            name="customer"
+            name="name"
             className="input-block" 
             />
 
             <label className="input-block">Email:</label>
             <input 
             type="email" 
-            name="email"
+            name="_replyto"
             className="input-block" 
             required
             />
@@ -54,9 +54,9 @@ class Form extends React.Component {
     );
   }
 
-  submitForm(e) {
-    e.preventDefault();
-    const form = e.target;
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);

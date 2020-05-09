@@ -14,7 +14,7 @@ class Homepage extends React.Component {
                     <p>We serve New Hartford and its neighbors the freshest breakfast and lunch with a passion for organic and local ingredients. We have a variety of coffees
                     and house-blended teas and have plenty of vegan and gluten-free options, with something for everyone!<br></br>
                     </p>
-                    <img src={require("../images/cafe-couch.jpg")} alt="Comfy couch" className="pic" id="comfy-couch-pic"></img>
+                    <img src={require("../images/ivyswag.jpg")} alt="Ivy swag around doorframe" className="pic" id="ivy-swag-pic"></img>
                 </div>
             <img src={require("../images/avocado-toast.jpg")} alt="Avocado toast" className="pic" id="avocado-toast-pic"></img>
             <img src={require("../images/chia-pudding.jpg")} alt="Chia pudding" className="pic" id="chia-pudding-pic"></img>
