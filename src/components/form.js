@@ -12,45 +12,48 @@ class Form extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <form
-        className="contact-form"
-        onSubmit={this.submitForm}
-        action="https://formspree.io/xknqnavq"
-        method="POST"
-      >
-    
-    <div className="row">
-        <div className = "column">
-            <label className="input-block" >Your Name:</label>
-            <input 
+      <div class="container">
+          <form
+            id="contact"
+            onSubmit={this.submitForm}
+            action="https://formspree.io/xknqnavq"
+            method="POST"
+          >
+            <h3>Have questions? Drop us a line!</h3>
+            <h4>We politely decline reservations.</h4>
+
+          <input 
+            placeholder="Your name" 
             type="text" 
-            name="name"
-            className="input-block" 
-            />
+            tabindex="1" 
+            required 
+            autofocus
+          />
 
-            <label className="input-block">Email:</label>
-            <input 
-            type="email" 
-            name="_replyto"
-            className="input-block" 
-            required
-            />
-        </div>
+        <input 
+          placeholder="Your email address" 
+          type="email" 
+          tabindex="2" 
+          required
+        />
 
-        <div className = "column">
-            <label>Message:</label>
-            <input 
-            type="text" 
-            name="message"
-            id="message-box"
-            required
-            />
-        </div>
-    </div>
+        <input 
+          placeholder="Your Phone Number (optional)" 
+          type="tel" 
+          tabindex="3"
+        />
+        
+        <textarea 
+          placeholder="Type your message here...." 
+          tabindex="5" 
+          required
+        />
 
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button id="form-button" type="submit">Submit</button>}
+        {status === "SUCCESS" ? <p>Thanks!</p> : <button id="contact-submit" name="submit" type="submit">Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
-      </form>
+
+        </form>
+      </div>
     );
   }
 

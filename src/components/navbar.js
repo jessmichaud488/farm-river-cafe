@@ -29,7 +29,7 @@ class App extends Component {
                   timeout={{enter: 750, exit: 150}}
                 >
                   <Switch location={location}>
-                    <Route exact path="/" component={Homepage}/>
+                    <Route exact path="/" component={Homepage} />
                     <Route path="/menu" component={Menu} />
                     <Route path="/crafts" component={Crafts} />
                     <Route path="/openmic" component={Openmic} />
