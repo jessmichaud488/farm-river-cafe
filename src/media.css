@@ -6,12 +6,98 @@
 
   #farmriver-logo {
     margin-top: 80px;
+    margin-left: 450px;
+  }
+
+  .text-div {
+    margin-left: 530px;
+  }
+  
+  #cafe-room-pic {
+    margin-left: 700px;
+  }
+  
+  #chia-pudding-pic {
+    margin-left: 385px;
+  }
+  
+  #avocado-toast-pic {
+    margin-left: 15px;
+  }
+  
+  #ivy-swag-pic {
+    margin-left: -335px;
+  }
+
+  #homepage-collage {
+    margin-top: 300px;
+    margin-bottom: 600px;
+  }
+
+  #menu-text {
+    margin-left: 45px;
+    margin-bottom: 150px;
+  }
+  
+  #menu-photo {
+    margin-left: 45px;
+  }
+  
+  #stephanie-pic {
+    margin-left: 200px;
+
+  }
+  
+  .font-bold {
+    text-align: center;
+  }
+  
+  #desserts-div{
+    margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 120px;
+  }
+  
+  #desserts-images-div {
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+  
+  .carousel-root {
+    margin-left: 10px;
+    width: 500px;
+  }
+
+  #crafts-collage {
+    margin-left: 225px;
+  }
+  
+  #crafts-text-div {
+    margin-left: 50px;
+  }
+
+  #video-div {
+    margin-top: 300px;
+    margin-left: 5px;
+  }
+  
+  #openmic-text-div {
+    margin-bottom: 500px;
+    margin-left: 20px;
+  }
+
+  #map {
+    margin-top: 200px;
+    margin-left: 400px;
+  }
+
+  .container {
+    margin-top: 900px;
+    margin-left: 350px;
+    margin-bottom: 100px;
   }
 
   .footer-div {
-    margin-left: 50px;
+    margin-left: 100px;
   }
   }
   
