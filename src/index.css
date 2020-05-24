@@ -32,7 +32,7 @@ html {
 #cafe-room-pic {
   height: 246px;
   width: 319px;
-  margin-left: 920px;
+  margin-left: 945px;
   position: absolute;
   z-index: 2;
 }
@@ -59,7 +59,7 @@ html {
   width: 360px;
   position: static;
   margin-top: 100px;
-  margin-left: -295px;
+  margin-left: -335px;
   z-index: 1;
 }
 
@@ -108,13 +108,12 @@ nav a:not(:last-child) {
 }
 
 .footer-div {
-  position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1px;
   list-style-type: none;
   margin-top: 250px;
-  margin-left: 250px;
+  margin-left: 225px;
   width: 1020px;
 }
 
@@ -163,6 +162,11 @@ nav a:not(:last-child) {
   margin-right: 5px;
   height: 24px;
   width: 24px;
+}
+
+.contact-form {
+  margin-top: 550px;
+  margin-left: 40px;
 }
 
 #map {

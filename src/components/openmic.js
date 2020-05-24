@@ -32,7 +32,7 @@ const path3 = require('../videos/OpenMic3.mp4');
             </div>
 
             </div>
-                )
+            )
             }
     }
 
